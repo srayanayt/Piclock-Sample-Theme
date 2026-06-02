@@ -1,0 +1,236 @@
+/* this is just the pixflat theme because why would i make a new theme for this*/
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+    background-color: #e6e7ea;
+    color: #2b3a4a;
+
+    text-align: center;
+}
+/* custom foreground element */
+.fgelement::before {
+    content: "";
+
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 3px;
+
+    background: transparent;
+}
+
+.theme:hover {
+    background: #e9edf2;
+}
+
+.theme:active::before {
+    background: #3a6ea5;
+}
+/* MAIN CLOCK */
+#time {
+    background: #f4f5f7;
+
+    height: 60vh;
+    width: 90vw;
+
+    font-size: clamp(1rem, 20vw, 55vh);
+
+    border: 1px solid #c9cdd3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    margin-top: 5vh;
+
+    box-shadow: none;
+}
+
+/* DATE */
+#date {
+    background: #f4f5f7;
+
+    height: 8vh;
+    width: 90vw;
+
+    font-size: clamp(1rem, 85vw, 6vh);
+
+    border: 1px solid #c9cdd3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    margin-top: 2vh;
+
+    box-shadow: none;
+}
+
+/* TOP PANEL / BUTTON BAR */
+#buttons {
+    width: 90vw;
+    height: 13vh;
+
+    background-color: #dfe3e8;
+
+    margin: auto;
+    margin-top: 2vh;
+
+    border: 1px solid #c9cdd3;
+
+    box-shadow: none;
+}
+
+/* BUTTON */
+#link {
+    background: #f4f5f7;
+    color: #2b3a4a;
+
+    height: 10vh;
+    padding: 10px;
+
+    font-size: clamp(1rem, 3vw, 5vh);
+
+    border: 1px solid #c9cdd3;
+
+    display: inline-block;
+
+    margin-top: 1.5vh;
+
+    position: relative;
+
+    transition: background 0.1s ease;
+}
+
+/* 🔵 PIXFLAT "SELECTED TOP LINE" EFFECT */
+#link::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 3px;
+
+    background: transparent;
+}
+
+/* hover = active selection style */
+#link:hover {
+    background: #e9edf2;
+}
+
+/* active = top highlight line (PIXFLAT SIGNATURE) */
+#link:active::before {
+    background: #3a6ea5;
+}
+
+/* THEME CARD */
+.theme {
+
+    margin-left: 5vw;
+    margin-top: 1vh;
+
+    font-size: clamp(1.2rem, 4vw + 2vh, 6vh);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f4f5f7;
+    color: #2b3a4a;
+
+    border: 1px solid #c9cdd3;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: background 0.1s ease;
+}
+
+/* PIXFLAT TOP BAR SELECTION STYLE */
+.theme::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 3px;
+
+    background: transparent;
+}
+
+.theme:hover {
+    background: #e9edf2;
+}
+
+.theme:active::before {
+    background: #3a6ea5;
+}
+body {
+    font-family: Inter;
+    background: #e6e7ea;
+    color: #2b3a4a;
+    text-align: center;
+}
+
+.day, .temp, #back, #current .temp {
+    background: #f4f5f7;
+    border: 1px solid #c9cdd3;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+#temps {
+    gap: 10px;
+}
+
+.day {
+    position: relative;
+}
+
+body {
+    font-family: Inter;
+    background: #e6e7ea;
+    color: #2b3a4a;
+    text-align: center;
+}
+
+.day, .temp, #back, #current .temp {
+    background: #f4f5f7;
+    border: 1px solid #c9cdd3;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+#temps {
+    gap: 10px;
+}
+
+.day {
+    position: relative;
+}
+
+/* TOP LINE selection style */
+.day::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: transparent;
+}
+
+.day:active::before {
+    background: #3a6ea5;
+}
